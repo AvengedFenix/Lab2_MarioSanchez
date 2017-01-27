@@ -62,8 +62,15 @@ int menu(int men){
 }
 
 int main(){
-	cout<<"Ingrese el numero de ejercicio\n1. Lados de un triangulo\n2. Formula cuadratica\n3. Distancia entre puntos"<<endl;
-	int men;
-	cin>>men;
-	menu(men);
+	cout<<"Desea usar el programa? S/N"<<endl;
+	char resp;
+	cin>>resp;
+	while(resp == 's' || resp == 'S'){
+		cout<<"Ingrese el numero de ejercicio\n1. Lados de un triangulo\n2. Formula cuadratica\n3. Distancia entre puntos"<<endl;
+		int men;
+		cin>>men;
+		menu(men);
+		cout<<"Desea seguir S/N";
+		cin>>resp;
+	}
 }
